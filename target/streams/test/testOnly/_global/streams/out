@@ -1,0 +1,18 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(RefDiscoverySpec, zio.test.sbt.RunnableSpecFingerprint$@13c59f52, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- RefDiscoverySpec[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m  [31m- pktLine[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m    [34m`output` = 0007da[0m
+[0m[[0m[0minfo[0m] [0m[0m[34m[0m did not satisfy [36mequalTo(00006a[0m
+[0m[[0m[0minfo[0m] [0m[0m[36m)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m    [36m☛ /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/src/test/scala/RefDiscoverySpec.scala:10[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRan 1 test in 1 s 736 ms: 0 succeeded, 0 ignored, 1 failed[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- RefDiscoverySpec[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m  [31m- pktLine[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m    [34m`output` = 0007da[0m
+[0m[[0m[0minfo[0m] [0m[0m[34m[0m did not satisfy [36mequalTo(00006a[0m
+[0m[[0m[0minfo[0m] [0m[0m[36m)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m    [36m☛ /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/src/test/scala/RefDiscoverySpec.scala:10[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mDone[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	RefDiscoverySpec[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m

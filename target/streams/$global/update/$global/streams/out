@@ -1,0 +1,1413 @@
+[0m[[0m[0minfo[0m] [0m[0mUpdating ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolving dependencies :: com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT[0m
+[0m[[0m[0mdebug[0m] [0m[0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool][0m
+[0m[[0m[0mdebug[0m] [0m[0m	validate = true[0m
+[0m[[0m[0mdebug[0m] [0m[0m	refresh = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'compile'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.6 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried /home/aryzach/.ivy2/local/org.scala-lang/scala-library/2.13.6/ivys/ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for org.scala-lang#scala-library;2.13.6[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0mproblem occurred while resolving dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]} with public: java.lang.RuntimeException: public: unable to get resource for org/scala-lang#scala-library;2.13.6: res=https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6.pom: java.net.UnknownHostException: repo1.maven.org: Name or service not known[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:135)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.AbstractPatternsBasedResolver.findResourceUsingPatterns(AbstractPatternsBasedResolver.java:96)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.findIvyFileRef(IBiblioResolver.java:102)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.BasicResolver.getDependency(BasicResolver.java:228)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.getDependency(IBiblioResolver.java:538)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.sbt$internal$librarymanagement$ConvertResolver$DescriptorRequired$$super$getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency(ConvertResolver.scala:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency$(ConvertResolver.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.IvyNode.loadData(IvyNode.java:169)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.VisitNode.loadData(VisitNode.java:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:714)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.doFetchDependencies(ResolveEngine.java:799)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:722)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.getDependencies(ResolveEngine.java:594)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.resolve(ResolveEngine.java:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.Ivy.resolve(Ivy.java:517)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.resolveAndRetrieve(IvyActions.scala:322)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.$anonfun$updateEither$1(IvyActions.scala:208)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.$anonfun$withModule$1(Ivy.scala:243)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.$anonfun$withIvy$1(Ivy.scala:204)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.sbt$internal$librarymanagement$IvySbt$$action$1(Ivy.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$$anon$3.call(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:113)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannelRetries$1(Locks.scala:91)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.$anonfun$withFileLock$1(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.withResource(Using.scala:12)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.apply(Using.scala:9)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withFileLock(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:59)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply0(Locks.scala:47)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply(Locks.scala:36)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withDefaultLogger(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:199)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:196)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.withModule(Ivy.scala:242)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.updateEither(IvyActions.scala:193)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.ivy.IvyDependencyResolution.update(IvyDependencyResolution.scala:20)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:56)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:46)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:99)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:68)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$19(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.util.control.Exception$Catch.apply(Exception.scala:224)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:95)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:149)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:126)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Classpaths$.$anonfun$updateTask$5(Defaults.scala:2398)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:44)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(System.scala:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.work(Execute.scala:272)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m[[0m[0mdebug[0m] [0m[0mCaused by: java.net.UnknownHostException: repo1.maven.org: Name or service not known[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1519)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.Dns$1.lookup(Dns.java:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:170)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:136)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.execute(RealCall.java:69)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:48)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:29)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.util.url.URLHandlerDispatcher.getURLInfo(URLHandlerDispatcher.java:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.init(URLResource.java:65)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.exists(URLResource.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:97)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	... 106 more[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried /home/aryzach/.sbt/preloaded/org.scala-lang/scala-library/2.13.6/ivys/ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local-preloaded-ivy: no ivy file found for org.scala-lang#scala-library;2.13.6[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried file:////home/aryzach/.sbt/preloaded/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local-preloaded: no ivy file found for org.scala-lang#scala-library;2.13.6[0m
+[0m[[0m[0mdebug[0m] [0m[0mproblem occurred while resolving dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]} with sbt-chain-delegate: java.lang.RuntimeException: public: unable to get resource for org/scala-lang#scala-library;2.13.6: res=https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6.pom: java.net.UnknownHostException: repo1.maven.org: Name or service not known[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:135)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.AbstractPatternsBasedResolver.findResourceUsingPatterns(AbstractPatternsBasedResolver.java:96)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.findIvyFileRef(IBiblioResolver.java:102)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.BasicResolver.getDependency(BasicResolver.java:228)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.getDependency(IBiblioResolver.java:538)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.sbt$internal$librarymanagement$ConvertResolver$DescriptorRequired$$super$getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency(ConvertResolver.scala:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency$(ConvertResolver.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.IvyNode.loadData(IvyNode.java:169)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.VisitNode.loadData(VisitNode.java:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:714)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.doFetchDependencies(ResolveEngine.java:799)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:722)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.getDependencies(ResolveEngine.java:594)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.resolve(ResolveEngine.java:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.Ivy.resolve(Ivy.java:517)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.resolveAndRetrieve(IvyActions.scala:322)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.$anonfun$updateEither$1(IvyActions.scala:208)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.$anonfun$withModule$1(Ivy.scala:243)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.$anonfun$withIvy$1(Ivy.scala:204)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.sbt$internal$librarymanagement$IvySbt$$action$1(Ivy.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$$anon$3.call(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:113)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannelRetries$1(Locks.scala:91)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.$anonfun$withFileLock$1(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.withResource(Using.scala:12)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.apply(Using.scala:9)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withFileLock(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:59)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply0(Locks.scala:47)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply(Locks.scala:36)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withDefaultLogger(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:199)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:196)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.withModule(Ivy.scala:242)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.updateEither(IvyActions.scala:193)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.ivy.IvyDependencyResolution.update(IvyDependencyResolution.scala:20)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:56)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:46)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:99)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:68)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$19(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.util.control.Exception$Catch.apply(Exception.scala:224)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:95)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:149)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:126)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Classpaths$.$anonfun$updateTask$5(Defaults.scala:2398)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:44)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(System.scala:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.work(Execute.scala:272)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m[[0m[0mdebug[0m] [0m[0mCaused by: java.net.UnknownHostException: repo1.maven.org: Name or service not known[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1519)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.Dns$1.lookup(Dns.java:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:170)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:136)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.execute(RealCall.java:69)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:48)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:29)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.util.url.URLHandlerDispatcher.getURLInfo(URLHandlerDispatcher.java:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.init(URLResource.java:65)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.exists(URLResource.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:97)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	... 106 more[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->dev.zio#zio_2.13;2.0.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: dev.zio#zio_2.13;2.0.0 {compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: dev.zio#zio_2.13;2.0.0 {compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried /home/aryzach/.ivy2/local/dev.zio/zio_2.13/2.0.0/ivys/ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for dev.zio#zio_2.13;2.0.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/dev/zio/zio_2.13/2.0.0/zio_2.13-2.0.0.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0mproblem occurred while resolving dependency: dev.zio#zio_2.13;2.0.0 {compile=[default(compile)]} with public: java.lang.RuntimeException: public: unable to get resource for dev/zio#zio_2.13;2.0.0: res=https://repo1.maven.org/maven2/dev/zio/zio_2.13/2.0.0/zio_2.13-2.0.0.pom: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:135)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.AbstractPatternsBasedResolver.findResourceUsingPatterns(AbstractPatternsBasedResolver.java:96)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.findIvyFileRef(IBiblioResolver.java:102)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.BasicResolver.getDependency(BasicResolver.java:228)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.getDependency(IBiblioResolver.java:538)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.sbt$internal$librarymanagement$ConvertResolver$DescriptorRequired$$super$getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency(ConvertResolver.scala:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency$(ConvertResolver.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.IvyNode.loadData(IvyNode.java:169)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.VisitNode.loadData(VisitNode.java:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:714)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.doFetchDependencies(ResolveEngine.java:799)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:722)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.getDependencies(ResolveEngine.java:594)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.resolve(ResolveEngine.java:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.Ivy.resolve(Ivy.java:517)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.resolveAndRetrieve(IvyActions.scala:322)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.$anonfun$updateEither$1(IvyActions.scala:208)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.$anonfun$withModule$1(Ivy.scala:243)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.$anonfun$withIvy$1(Ivy.scala:204)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.sbt$internal$librarymanagement$IvySbt$$action$1(Ivy.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$$anon$3.call(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:113)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannelRetries$1(Locks.scala:91)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.$anonfun$withFileLock$1(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.withResource(Using.scala:12)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.apply(Using.scala:9)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withFileLock(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:59)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply0(Locks.scala:47)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply(Locks.scala:36)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withDefaultLogger(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:199)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:196)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.withModule(Ivy.scala:242)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.updateEither(IvyActions.scala:193)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.ivy.IvyDependencyResolution.update(IvyDependencyResolution.scala:20)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:56)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:46)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:99)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:68)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$19(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.util.control.Exception$Catch.apply(Exception.scala:224)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:95)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:149)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:126)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Classpaths$.$anonfun$updateTask$5(Defaults.scala:2398)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:44)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(System.scala:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.work(Execute.scala:272)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m[[0m[0mdebug[0m] [0m[0mCaused by: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.Dns$1.lookup(Dns.java:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:170)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:136)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.execute(RealCall.java:69)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:48)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:29)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.util.url.URLHandlerDispatcher.getURLInfo(URLHandlerDispatcher.java:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.init(URLResource.java:65)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.exists(URLResource.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:97)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	... 106 more[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried /home/aryzach/.sbt/preloaded/dev.zio/zio_2.13/2.0.0/ivys/ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local-preloaded-ivy: no ivy file found for dev.zio#zio_2.13;2.0.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried file:////home/aryzach/.sbt/preloaded/dev/zio/zio_2.13/2.0.0/zio_2.13-2.0.0.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local-preloaded: no ivy file found for dev.zio#zio_2.13;2.0.0[0m
+[0m[[0m[0mdebug[0m] [0m[0mproblem occurred while resolving dependency: dev.zio#zio_2.13;2.0.0 {compile=[default(compile)]} with sbt-chain-delegate: java.lang.RuntimeException: public: unable to get resource for dev/zio#zio_2.13;2.0.0: res=https://repo1.maven.org/maven2/dev/zio/zio_2.13/2.0.0/zio_2.13-2.0.0.pom: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:135)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.AbstractPatternsBasedResolver.findResourceUsingPatterns(AbstractPatternsBasedResolver.java:96)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.findIvyFileRef(IBiblioResolver.java:102)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.BasicResolver.getDependency(BasicResolver.java:228)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.getDependency(IBiblioResolver.java:538)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.sbt$internal$librarymanagement$ConvertResolver$DescriptorRequired$$super$getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency(ConvertResolver.scala:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency$(ConvertResolver.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.IvyNode.loadData(IvyNode.java:169)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.VisitNode.loadData(VisitNode.java:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:714)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.doFetchDependencies(ResolveEngine.java:799)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:722)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.getDependencies(ResolveEngine.java:594)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.resolve(ResolveEngine.java:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.Ivy.resolve(Ivy.java:517)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.resolveAndRetrieve(IvyActions.scala:322)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.$anonfun$updateEither$1(IvyActions.scala:208)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.$anonfun$withModule$1(Ivy.scala:243)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.$anonfun$withIvy$1(Ivy.scala:204)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.sbt$internal$librarymanagement$IvySbt$$action$1(Ivy.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$$anon$3.call(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:113)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannelRetries$1(Locks.scala:91)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.$anonfun$withFileLock$1(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.withResource(Using.scala:12)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.apply(Using.scala:9)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withFileLock(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:59)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply0(Locks.scala:47)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply(Locks.scala:36)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withDefaultLogger(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:199)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:196)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.withModule(Ivy.scala:242)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.updateEither(IvyActions.scala:193)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.ivy.IvyDependencyResolution.update(IvyDependencyResolution.scala:20)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:56)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:46)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:99)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:68)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$19(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.util.control.Exception$Catch.apply(Exception.scala:224)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:95)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:149)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:126)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Classpaths$.$anonfun$updateTask$5(Defaults.scala:2398)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:44)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(System.scala:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.work(Execute.scala:272)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m[[0m[0mdebug[0m] [0m[0mCaused by: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.Dns$1.lookup(Dns.java:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:170)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:136)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.execute(RealCall.java:69)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:48)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:29)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.util.url.URLHandlerDispatcher.getURLInfo(URLHandlerDispatcher.java:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.init(URLResource.java:65)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.exists(URLResource.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:97)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	... 106 more[0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'runtime'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.6 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->dev.zio#zio_2.13;2.0.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'test'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [test][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.6 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->dev.zio#zio_2.13;2.0.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.13;3.2.9 [test->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.scalatest#scalatest_2.13;3.2.9 {test=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: org.scalatest#scalatest_2.13;3.2.9 {test=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried /home/aryzach/.ivy2/local/org.scalatest/scalatest_2.13/3.2.9/ivys/ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for org.scalatest#scalatest_2.13;3.2.9[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.9/scalatest_2.13-3.2.9.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0mproblem occurred while resolving dependency: org.scalatest#scalatest_2.13;3.2.9 {test=[default(compile)]} with public: java.lang.RuntimeException: public: unable to get resource for org/scalatest#scalatest_2.13;3.2.9: res=https://repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.9/scalatest_2.13-3.2.9.pom: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:135)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.AbstractPatternsBasedResolver.findResourceUsingPatterns(AbstractPatternsBasedResolver.java:96)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.findIvyFileRef(IBiblioResolver.java:102)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.BasicResolver.getDependency(BasicResolver.java:228)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.getDependency(IBiblioResolver.java:538)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.sbt$internal$librarymanagement$ConvertResolver$DescriptorRequired$$super$getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency(ConvertResolver.scala:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency$(ConvertResolver.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.IvyNode.loadData(IvyNode.java:169)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.VisitNode.loadData(VisitNode.java:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:714)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.doFetchDependencies(ResolveEngine.java:799)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:722)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.getDependencies(ResolveEngine.java:594)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.resolve(ResolveEngine.java:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.Ivy.resolve(Ivy.java:517)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.resolveAndRetrieve(IvyActions.scala:322)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.$anonfun$updateEither$1(IvyActions.scala:208)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.$anonfun$withModule$1(Ivy.scala:243)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.$anonfun$withIvy$1(Ivy.scala:204)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.sbt$internal$librarymanagement$IvySbt$$action$1(Ivy.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$$anon$3.call(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:113)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannelRetries$1(Locks.scala:91)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.$anonfun$withFileLock$1(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.withResource(Using.scala:12)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.apply(Using.scala:9)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withFileLock(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:59)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply0(Locks.scala:47)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply(Locks.scala:36)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withDefaultLogger(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:199)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:196)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.withModule(Ivy.scala:242)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.updateEither(IvyActions.scala:193)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.ivy.IvyDependencyResolution.update(IvyDependencyResolution.scala:20)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:56)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:46)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:99)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:68)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$19(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.util.control.Exception$Catch.apply(Exception.scala:224)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:95)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:149)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:126)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Classpaths$.$anonfun$updateTask$5(Defaults.scala:2398)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:44)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(System.scala:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.work(Execute.scala:272)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m[[0m[0mdebug[0m] [0m[0mCaused by: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.Dns$1.lookup(Dns.java:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:170)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:136)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.execute(RealCall.java:69)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:48)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:29)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.util.url.URLHandlerDispatcher.getURLInfo(URLHandlerDispatcher.java:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.init(URLResource.java:65)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.exists(URLResource.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:97)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	... 106 more[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried /home/aryzach/.sbt/preloaded/org.scalatest/scalatest_2.13/3.2.9/ivys/ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local-preloaded-ivy: no ivy file found for org.scalatest#scalatest_2.13;3.2.9[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried file:////home/aryzach/.sbt/preloaded/org/scalatest/scalatest_2.13/3.2.9/scalatest_2.13-3.2.9.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local-preloaded: no ivy file found for org.scalatest#scalatest_2.13;3.2.9[0m
+[0m[[0m[0mdebug[0m] [0m[0mproblem occurred while resolving dependency: org.scalatest#scalatest_2.13;3.2.9 {test=[default(compile)]} with sbt-chain-delegate: java.lang.RuntimeException: public: unable to get resource for org/scalatest#scalatest_2.13;3.2.9: res=https://repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.9/scalatest_2.13-3.2.9.pom: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:135)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.AbstractPatternsBasedResolver.findResourceUsingPatterns(AbstractPatternsBasedResolver.java:96)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.findIvyFileRef(IBiblioResolver.java:102)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.BasicResolver.getDependency(BasicResolver.java:228)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.getDependency(IBiblioResolver.java:538)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.sbt$internal$librarymanagement$ConvertResolver$DescriptorRequired$$super$getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency(ConvertResolver.scala:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency$(ConvertResolver.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.IvyNode.loadData(IvyNode.java:169)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.VisitNode.loadData(VisitNode.java:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:714)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.doFetchDependencies(ResolveEngine.java:799)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:722)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.getDependencies(ResolveEngine.java:594)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.resolve(ResolveEngine.java:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.Ivy.resolve(Ivy.java:517)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.resolveAndRetrieve(IvyActions.scala:322)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.$anonfun$updateEither$1(IvyActions.scala:208)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.$anonfun$withModule$1(Ivy.scala:243)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.$anonfun$withIvy$1(Ivy.scala:204)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.sbt$internal$librarymanagement$IvySbt$$action$1(Ivy.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$$anon$3.call(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:113)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannelRetries$1(Locks.scala:91)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.$anonfun$withFileLock$1(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.withResource(Using.scala:12)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.apply(Using.scala:9)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withFileLock(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:59)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply0(Locks.scala:47)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply(Locks.scala:36)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withDefaultLogger(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:199)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:196)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.withModule(Ivy.scala:242)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.updateEither(IvyActions.scala:193)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.ivy.IvyDependencyResolution.update(IvyDependencyResolution.scala:20)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:56)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:46)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:99)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:68)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$19(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.util.control.Exception$Catch.apply(Exception.scala:224)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:95)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:149)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:126)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Classpaths$.$anonfun$updateTask$5(Defaults.scala:2398)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:44)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(System.scala:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.work(Execute.scala:272)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m[[0m[0mdebug[0m] [0m[0mCaused by: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.Dns$1.lookup(Dns.java:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:170)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:136)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.execute(RealCall.java:69)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:48)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:29)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.util.url.URLHandlerDispatcher.getURLInfo(URLHandlerDispatcher.java:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.init(URLResource.java:65)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.exists(URLResource.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:97)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	... 106 more[0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'provided'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [provided][0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'optional'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [optional][0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'compile-internal'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [compile-internal][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.6 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->dev.zio#zio_2.13;2.0.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [optional][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [provided][0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'runtime-internal'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [runtime-internal][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.6 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->dev.zio#zio_2.13;2.0.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [optional][0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'test-internal'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [test-internal][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [test][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.6 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->dev.zio#zio_2.13;2.0.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.13;3.2.9 [test->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [optional][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [provided][0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'plugin'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [plugin][0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'pom'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [pom][0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'scala-tool'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT [scala-tool][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.13.6 [scala-tool->default][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried /home/aryzach/.ivy2/local/org.scala-lang/scala-compiler/2.13.6/ivys/ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for org.scala-lang#scala-compiler;2.13.6[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.6/scala-compiler-2.13.6.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0mproblem occurred while resolving dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} with public: java.lang.RuntimeException: public: unable to get resource for org/scala-lang#scala-compiler;2.13.6: res=https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.6/scala-compiler-2.13.6.pom: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:135)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.AbstractPatternsBasedResolver.findResourceUsingPatterns(AbstractPatternsBasedResolver.java:96)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.findIvyFileRef(IBiblioResolver.java:102)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.BasicResolver.getDependency(BasicResolver.java:228)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.getDependency(IBiblioResolver.java:538)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.sbt$internal$librarymanagement$ConvertResolver$DescriptorRequired$$super$getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency(ConvertResolver.scala:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency$(ConvertResolver.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.IvyNode.loadData(IvyNode.java:169)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.VisitNode.loadData(VisitNode.java:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:714)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.doFetchDependencies(ResolveEngine.java:799)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:722)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.getDependencies(ResolveEngine.java:594)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.resolve(ResolveEngine.java:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.Ivy.resolve(Ivy.java:517)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.resolveAndRetrieve(IvyActions.scala:322)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.$anonfun$updateEither$1(IvyActions.scala:208)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.$anonfun$withModule$1(Ivy.scala:243)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.$anonfun$withIvy$1(Ivy.scala:204)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.sbt$internal$librarymanagement$IvySbt$$action$1(Ivy.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$$anon$3.call(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:113)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannelRetries$1(Locks.scala:91)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.$anonfun$withFileLock$1(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.withResource(Using.scala:12)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.apply(Using.scala:9)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withFileLock(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:59)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply0(Locks.scala:47)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply(Locks.scala:36)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withDefaultLogger(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:199)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:196)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.withModule(Ivy.scala:242)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.updateEither(IvyActions.scala:193)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.ivy.IvyDependencyResolution.update(IvyDependencyResolution.scala:20)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:56)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:46)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:99)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:68)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$19(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.util.control.Exception$Catch.apply(Exception.scala:224)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:95)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:149)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:126)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Classpaths$.$anonfun$updateTask$5(Defaults.scala:2398)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:44)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(System.scala:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.work(Execute.scala:272)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m[[0m[0mdebug[0m] [0m[0mCaused by: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.Dns$1.lookup(Dns.java:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:170)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:136)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.execute(RealCall.java:69)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:48)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:29)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.util.url.URLHandlerDispatcher.getURLInfo(URLHandlerDispatcher.java:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.init(URLResource.java:65)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.exists(URLResource.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:97)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	... 106 more[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried /home/aryzach/.sbt/preloaded/org.scala-lang/scala-compiler/2.13.6/ivys/ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local-preloaded-ivy: no ivy file found for org.scala-lang#scala-compiler;2.13.6[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried file:////home/aryzach/.sbt/preloaded/org/scala-lang/scala-compiler/2.13.6/scala-compiler-2.13.6.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local-preloaded: no ivy file found for org.scala-lang#scala-compiler;2.13.6[0m
+[0m[[0m[0mdebug[0m] [0m[0mproblem occurred while resolving dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} with sbt-chain-delegate: java.lang.RuntimeException: public: unable to get resource for org/scala-lang#scala-compiler;2.13.6: res=https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.6/scala-compiler-2.13.6.pom: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:135)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.AbstractPatternsBasedResolver.findResourceUsingPatterns(AbstractPatternsBasedResolver.java:96)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.findIvyFileRef(IBiblioResolver.java:102)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.BasicResolver.getDependency(BasicResolver.java:228)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.IBiblioResolver.getDependency(IBiblioResolver.java:538)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.sbt$internal$librarymanagement$ConvertResolver$DescriptorRequired$$super$getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency(ConvertResolver.scala:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$DescriptorRequired.getDependency$(ConvertResolver.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ConvertResolver$$anonfun$defaultConvert$lzycompute$1$PluginCapableResolver$1.getDependency(ConvertResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.performResolution$1(SbtChainResolver.scala:152)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getResults$3(SbtChainResolver.scala:172)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:944)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1432)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getResults(SbtChainResolver.scala:165)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$lzycompute$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.results$1(SbtChainResolver.scala:321)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$getDependency$1(SbtChainResolver.scala:323)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.$anonfun$resolveByAllMeans$2(SbtChainResolver.scala:249)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Option.orElse(Option.scala:289)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.resolveByAllMeans(SbtChainResolver.scala:247)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver$CustomSbtResolution$.getDependency(SbtChainResolver.scala:324)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.SbtChainResolver.getDependency(SbtChainResolver.scala:90)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.IvyNode.loadData(IvyNode.java:169)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.VisitNode.loadData(VisitNode.java:292)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:714)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.doFetchDependencies(ResolveEngine.java:799)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.fetchDependencies(ResolveEngine.java:722)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.getDependencies(ResolveEngine.java:594)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.core.resolve.ResolveEngine.resolve(ResolveEngine.java:234)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.Ivy.resolve(Ivy.java:517)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.resolveAndRetrieve(IvyActions.scala:322)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.$anonfun$updateEither$1(IvyActions.scala:208)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.$anonfun$withModule$1(Ivy.scala:243)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.$anonfun$withIvy$1(Ivy.scala:204)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.sbt$internal$librarymanagement$IvySbt$$action$1(Ivy.scala:70)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$$anon$3.call(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:113)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannelRetries$1(Locks.scala:91)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.$anonfun$withFileLock$1(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.withResource(Using.scala:12)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Using$.apply(Using.scala:9)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withFileLock(Locks.scala:119)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:71)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:59)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply0(Locks.scala:47)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at xsbt.boot.Locks$.apply(Locks.scala:36)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withDefaultLogger(Ivy.scala:77)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:199)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:196)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.withModule(Ivy.scala:242)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.updateEither(IvyActions.scala:193)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.ivy.IvyDependencyResolution.update(IvyDependencyResolution.scala:20)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:56)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:46)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:99)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:68)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$19(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.util.control.Exception$Catch.apply(Exception.scala:224)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:112)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:95)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:149)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:126)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Classpaths$.$anonfun$updateTask$5(Defaults.scala:2398)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:44)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(System.scala:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.work(Execute.scala:272)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:263)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m[[0m[0mdebug[0m] [0m[0mCaused by: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.Dns$1.lookup(Dns.java:39)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:170)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:136)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at okhttp3.RealCall.execute(RealCall.java:69)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:48)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at sbt.internal.librarymanagement.ivyint.GigahorseUrlHandler.getURLInfo(GigahorseUrlHandler.scala:29)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.util.url.URLHandlerDispatcher.getURLInfo(URLHandlerDispatcher.java:66)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.init(URLResource.java:65)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.repository.url.URLResource.exists(URLResource.java:81)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	at org.apache.ivy.plugins.resolver.RepositoryResolver.findResourceUsingPattern(RepositoryResolver.java:97)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	... 106 more[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.13.6 [scala-tool->optional(default)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.6 [scala-tool->default][0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.13.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.13.6 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.13.6 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.6 [scala-tool->optional(default)][0m
+[0m[[0m[0mdebug[0m] [0m[0mignoring unhandled DependencyDescriptorMediator: class sbt.internal.librarymanagement.IvyScalaUtil$OverrideScalaMediator[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resolved ivy file produced in cache[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: downloading artifacts ::[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 308ms :: artifacts dl 2ms[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::          UNRESOLVED DEPENDENCIES         ::[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[0m[33mwarn[0m] [0m[0m	:: org.scala-lang#scala-library;2.13.6: public: unable to get resource for org/scala-lang#scala-library;2.13.6: res=https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6.pom: java.net.UnknownHostException: repo1.maven.org: Name or service not known[0m
+[0m[[0m[33mwarn[0m] [0m[0m	:: dev.zio#zio_2.13;2.0.0: public: unable to get resource for dev/zio#zio_2.13;2.0.0: res=https://repo1.maven.org/maven2/dev/zio/zio_2.13/2.0.0/zio_2.13-2.0.0.pom: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[33mwarn[0m] [0m[0m	:: org.scalatest#scalatest_2.13;3.2.9: public: unable to get resource for org/scalatest#scalatest_2.13;3.2.9: res=https://repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.9/scalatest_2.13-3.2.9.pom: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[33mwarn[0m] [0m[0m	:: org.scala-lang#scala-compiler;2.13.6: public: unable to get resource for org/scala-lang#scala-compiler;2.13.6: res=https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.6/scala-compiler-2.13.6.pom: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT compile produced in /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/target/scala-2.13/resolution-cache/reports/com.example-gitcloneinscalazio_2.13-compile.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT runtime produced in /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/target/scala-2.13/resolution-cache/reports/com.example-gitcloneinscalazio_2.13-runtime.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT test produced in /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/target/scala-2.13/resolution-cache/reports/com.example-gitcloneinscalazio_2.13-test.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT provided produced in /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/target/scala-2.13/resolution-cache/reports/com.example-gitcloneinscalazio_2.13-provided.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT optional produced in /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/target/scala-2.13/resolution-cache/reports/com.example-gitcloneinscalazio_2.13-optional.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT compile-internal produced in /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/target/scala-2.13/resolution-cache/reports/com.example-gitcloneinscalazio_2.13-compile-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT runtime-internal produced in /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/target/scala-2.13/resolution-cache/reports/com.example-gitcloneinscalazio_2.13-runtime-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT test-internal produced in /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/target/scala-2.13/resolution-cache/reports/com.example-gitcloneinscalazio_2.13-test-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT plugin produced in /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/target/scala-2.13/resolution-cache/reports/com.example-gitcloneinscalazio_2.13-plugin.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT pom produced in /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/target/scala-2.13/resolution-cache/reports/com.example-gitcloneinscalazio_2.13-pom.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.example#gitcloneinscalazio_2.13;0.1.0-SNAPSHOT scala-tool produced in /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/target/scala-2.13/resolution-cache/reports/com.example-gitcloneinscalazio_2.13-scala-tool.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resolve done (308ms resolve - 2ms download)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m	Note: Unresolved dependencies path:[0m
+[0m[[0m[33mwarn[0m] [0m[0m		org.scala-lang:scala-library:2.13.6 ((sbt.Classpaths.jvmBaseSettings) Defaults.scala#L2069)[0m
+[0m[[0m[33mwarn[0m] [0m[0m		  +- com.example:gitcloneinscalazio_2.13:0.1.0-SNAPSHOT[0m
+[0m[[0m[33mwarn[0m] [0m[0m		dev.zio:zio_2.13:2.0.0 (/home/aryzach/Documents/Projects/Active/gitcloneinscalazio/build.sbt#L12)[0m
+[0m[[0m[33mwarn[0m] [0m[0m		  +- com.example:gitcloneinscalazio_2.13:0.1.0-SNAPSHOT[0m
+[0m[[0m[33mwarn[0m] [0m[0m		org.scalatest:scalatest_2.13:3.2.9 (/home/aryzach/Documents/Projects/Active/gitcloneinscalazio/build.sbt#L19-20)[0m
+[0m[[0m[33mwarn[0m] [0m[0m		  +- com.example:gitcloneinscalazio_2.13:0.1.0-SNAPSHOT[0m
+[0m[[0m[33mwarn[0m] [0m[0m		org.scala-lang:scala-compiler:2.13.6[0m
+[0m[[0m[33mwarn[0m] [0m[0m		  +- com.example:gitcloneinscalazio_2.13:0.1.0-SNAPSHOT[0m
+[0m[[0m[31merror[0m] [0m[0msbt.librarymanagement.ResolveException: unresolved dependency: org.scala-lang#scala-library;2.13.6: public: unable to get resource for org/scala-lang#scala-library;2.13.6: res=https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6.pom: java.net.UnknownHostException: repo1.maven.org: Name or service not known[0m
+[0m[[0m[31merror[0m] [0m[0munresolved dependency: dev.zio#zio_2.13;2.0.0: public: unable to get resource for dev/zio#zio_2.13;2.0.0: res=https://repo1.maven.org/maven2/dev/zio/zio_2.13/2.0.0/zio_2.13-2.0.0.pom: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[31merror[0m] [0m[0munresolved dependency: org.scalatest#scalatest_2.13;3.2.9: public: unable to get resource for org/scalatest#scalatest_2.13;3.2.9: res=https://repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.9/scalatest_2.13-3.2.9.pom: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[31merror[0m] [0m[0munresolved dependency: org.scala-lang#scala-compiler;2.13.6: public: unable to get resource for org/scala-lang#scala-compiler;2.13.6: res=https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.6/scala-compiler-2.13.6.pom: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.resolveAndRetrieve(IvyActions.scala:334)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.$anonfun$updateEither$1(IvyActions.scala:208)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.$anonfun$withModule$1(Ivy.scala:243)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.$anonfun$withIvy$1(Ivy.scala:204)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.sbt$internal$librarymanagement$IvySbt$$action$1(Ivy.scala:70)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$$anon$3.call(Ivy.scala:77)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:113)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withChannelRetries$1(Locks.scala:91)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.$anonfun$withFileLock$1(Locks.scala:119)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Using$.withResource(Using.scala:12)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Using$.apply(Using.scala:9)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withFileLock(Locks.scala:119)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:71)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:59)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$.apply0(Locks.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Locks$.apply(Locks.scala:36)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withDefaultLogger(Ivy.scala:77)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:199)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:196)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvySbt$Module.withModule(Ivy.scala:242)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.librarymanagement.IvyActions$.updateEither(IvyActions.scala:193)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.librarymanagement.ivy.IvyDependencyResolution.update(IvyDependencyResolution.scala:20)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:56)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:46)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:99)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$19(LibraryManagement.scala:112)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.control.Exception$Catch.apply(Exception.scala:224)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:112)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:95)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:149)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:126)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Classpaths$.$anonfun$updateTask$5(Defaults.scala:2398)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:44)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(System.scala:66)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:263)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:272)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:263)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m[[0m[31merror[0m] [0m[0m([31mupdate[0m) sbt.librarymanagement.ResolveException: unresolved dependency: org.scala-lang#scala-library;2.13.6: public: unable to get resource for org/scala-lang#scala-library;2.13.6: res=https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6.pom: java.net.UnknownHostException: repo1.maven.org: Name or service not known[0m
+[0m[[0m[31merror[0m] [0m[0munresolved dependency: dev.zio#zio_2.13;2.0.0: public: unable to get resource for dev/zio#zio_2.13;2.0.0: res=https://repo1.maven.org/maven2/dev/zio/zio_2.13/2.0.0/zio_2.13-2.0.0.pom: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[31merror[0m] [0m[0munresolved dependency: org.scalatest#scalatest_2.13;3.2.9: public: unable to get resource for org/scalatest#scalatest_2.13;3.2.9: res=https://repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.9/scalatest_2.13-3.2.9.pom: java.net.UnknownHostException: repo1.maven.org[0m
+[0m[[0m[31merror[0m] [0m[0munresolved dependency: org.scala-lang#scala-compiler;2.13.6: public: unable to get resource for org/scala-lang#scala-compiler;2.13.6: res=https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.6/scala-compiler-2.13.6.pom: java.net.UnknownHostException: repo1.maven.org[0m

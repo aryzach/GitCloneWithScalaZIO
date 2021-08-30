@@ -1,23 +1,16 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(CubeCalculatorTest, org.scalatest.tools.Framework$$anon$1@d3b8e3e, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(RefDiscoveryTest, org.scalatest.tools.Framework$$anon$1@d3b8e3e, false, [SuiteSelector])[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mCubeCalculatorTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- CubeCalculator.cube[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mRefDiscoveryTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- RefDiscovery.pktLine *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  "[]a[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  " did not equal "[0006]a[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  " (refDiscoveryTest.scala:3)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Analysis:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  "[]a[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m" -> "[0006]a[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m"[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 643 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 2[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 1, failed 1, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	CubeCalculatorTest[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(RefDiscoverySpec, zio.test.sbt.RunnableSpecFingerprint$@1a704c49, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- RefDiscoverySpec[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m  [32m+[0m pktLine[0m
+[0m[[0m[0minfo[0m] [0m[0m  [32m+[0m gitProtoRequest[0m
+[0m[[0m[0minfo[0m] [0m[0m  [31m- lsRemote[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m    [34m`output` = [0m did not satisfy [36mequalTo(IO[Remote]??????)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m    [36m☛ /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/src/test/scala/RefDiscoverySpec.scala:18[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRan 3 tests in 1 s 624 ms: 2 succeeded, 0 ignored, 1 failed[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- RefDiscoverySpec[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m  [31m- lsRemote[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m    [34m`output` = [0m did not satisfy [36mequalTo(IO[Remote]??????)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m    [36m☛ /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/src/test/scala/RefDiscoverySpec.scala:18[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mDone[0m
 [0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
-[0m[[0m[31merror[0m] [0m[0m	RefDiscoveryTest[0m
+[0m[[0m[31merror[0m] [0m[0m	RefDiscoverySpec[0m
 [0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
