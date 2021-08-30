@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(6265670a-e409-4f9f-a247-65d00a4ca09d), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/target/scala-2.13/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/aryzach/Documents/Projects/Active/gitcloneinscalazio/src/test/scala/refDiscoveryTest.scala:3:12: not found: value refDiscovery[0m
+[0m[[0m[31merror[0m] [0m[0m    assert(refDiscovery.pktLine("a\n") === "0006a\n")[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Aug 29, 2021, 8:41:20 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
