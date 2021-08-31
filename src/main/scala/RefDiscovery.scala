@@ -22,6 +22,7 @@ lsRemote' Remote{..} = withSocketsDo $
 
 */
 
+
 import zio._
 
 sealed case class Remote(getHost: String)(getPort: Option[Int])(getRepository: String)
@@ -36,7 +37,7 @@ object RefDiscovery extends App {
   // questionable \u0000 here. Need to look it up when have internet (vs haskells \0)
   def gitProtoRequest(host: String)(repo: String): String = pktLine("git-upload-pack /" ++ repo ++ "\u0000host="++host++"\u0000")
 
-  def lsRemote(remote: Remote): String = ""
+  def lsRemote(remote: Remote): ZIO[Any, Nothing, String] = ZIO.succeed("")
 
   def run(args: List[String]): zio.URIO[zio.ZEnv,zio.ExitCode] = ZIO.succeed(()).exitCode
 }
