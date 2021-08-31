@@ -1,4 +1,13 @@
-[0m[[0m[31merror[0m] [0m[0m/home/aryzach/Documents/Projects/Active/gitcloneinscalazio/src/test/scala/RefDiscoverySpec.scala:18:13: too few argument lists for macro invocation[0m
-[0m[[0m[31merror[0m] [0m[0m      assert([0m
-[0m[[0m[31merror[0m] [0m[0m            ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/aryzach/Documents/Projects/Active/gitcloneinscalazio/src/test/scala/RefDiscoverySpec.scala:9:20: not found: value RefDiscovery[0m
+[0m[[0m[31merror[0m] [0m[0m      val output = RefDiscovery.pktLine("a\n")[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/aryzach/Documents/Projects/Active/gitcloneinscalazio/src/test/scala/RefDiscoverySpec.scala:14:20: not found: value RefDiscovery[0m
+[0m[[0m[31merror[0m] [0m[0m      val output = RefDiscovery.gitProtoRequest("localhost")("testrepo")[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/aryzach/Documents/Projects/Active/gitcloneinscalazio/src/test/scala/RefDiscoverySpec.scala:19:20: not found: value RefDiscovery[0m
+[0m[[0m[31merror[0m] [0m[0m      val output = RefDiscovery.lsRemote(Remote("testHost")(Some(1))("testrepo")) [0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/aryzach/Documents/Projects/Active/gitcloneinscalazio/src/test/scala/RefDiscoverySpec.scala:19:42: not found: value Remote[0m
+[0m[[0m[31merror[0m] [0m[0m      val output = RefDiscovery.lsRemote(Remote("testHost")(Some(1))("testrepo")) [0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

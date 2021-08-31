@@ -21,3 +21,8 @@ libraryDependencies ++= Seq(
 )
 testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
 
+//libraryDependencies +=
+//  "com.typesafe.akka" %% "akka-actor" % "2.3.16"
+
+val AkkaVersion = "2.6.16"
+libraryDependencies += "com.typesafe.akka" %% "akka-actor" % AkkaVersion

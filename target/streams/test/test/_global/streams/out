@@ -1,15 +1,15 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(RefDiscoverySpec, zio.test.sbt.RunnableSpecFingerprint$@1a704c49, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(RefDiscoverySpec, zio.test.sbt.RunnableSpecFingerprint$@7b9c9439, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- RefDiscoverySpec[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m  [32m+[0m pktLine[0m
 [0m[[0m[0minfo[0m] [0m[0m  [32m+[0m gitProtoRequest[0m
 [0m[[0m[0minfo[0m] [0m[0m  [31m- lsRemote[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m    [34m`output` = [0m did not satisfy [36mequalTo(IO[Remote]??????)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m    [36m☛ /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/src/test/scala/RefDiscoverySpec.scala:18[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRan 3 tests in 1 s 624 ms: 2 succeeded, 0 ignored, 1 failed[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m    [34m[0m did not satisfy [36mequalTo(IO[Remote]??????)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m    [36m☛ /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/src/test/scala/RefDiscoverySpec.scala:20[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRan 3 tests in 1 s 565 ms: 2 succeeded, 0 ignored, 1 failed[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- RefDiscoverySpec[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m  [31m- lsRemote[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m    [34m`output` = [0m did not satisfy [36mequalTo(IO[Remote]??????)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m    [36m☛ /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/src/test/scala/RefDiscoverySpec.scala:18[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m    [34m[0m did not satisfy [36mequalTo(IO[Remote]??????)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m    [36m☛ /home/aryzach/Documents/Projects/Active/gitcloneinscalazio/src/test/scala/RefDiscoverySpec.scala:20[0m[0m
 [0m[[0m[0minfo[0m] [0m[0mDone[0m
 [0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
 [0m[[0m[31merror[0m] [0m[0m	RefDiscoverySpec[0m
