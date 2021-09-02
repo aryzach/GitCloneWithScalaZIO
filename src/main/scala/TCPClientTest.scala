@@ -6,12 +6,8 @@ import akka.io.{IO, Tcp}
 import akka.util.ByteString
 
 object AkkaTcpClient {
-  var prop : Props = _
-  def props(host :String,port :Int) = {
-    if(prop == null) prop = Props(classOf[AkkaTcpClient], new 
-InetSocketAddress(host,port))
-    prop
-  }
+  def props(host: String, port: Int) =
+    Props(classOf[AkkaTcpClient], new InetSocketAddress(host, port))
 
   final case class SendMessage(message: ByteString)
   final case class Ping(message: String)
@@ -58,16 +54,9 @@ class AkkaTcpClient(remote: InetSocketAddress) extends Actor {
         case _: ConnectionClosed =>
           println("Connection closed by server.")
           context stop self
-       }
-
-    case e: Exception =>
-      println(e.printStackTrace().toString)
-
-    case t: Throwable =>
-      println(t)
-
-    case _ =>
-      println("Something else is happening")
+      }
+        case _ =>
+          println("Something else is happening")
 
   }
 }

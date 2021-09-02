@@ -22,6 +22,8 @@ lsRemote' Remote{..} = withSocketsDo $
 
 */
 
+package com.refDiscovery
+
 import com.tcpClient
 
 import zio._
