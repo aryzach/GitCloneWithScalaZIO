@@ -22,12 +22,13 @@ lsRemote' Remote{..} = withSocketsDo $
 
 */
 
+import com.tcpClient
 
 import zio._
 
 sealed case class Remote(getHost: String)(getPort: Option[Int])(getRepository: String)
 
-object RefDiscovery extends App {
+object RefDiscovery {
 
   def pktLine(msg: String): String = {
     val hex = (4 + msg.length)
@@ -39,7 +40,6 @@ object RefDiscovery extends App {
 
   def lsRemote(remote: Remote): ZIO[Any, Nothing, String] = ZIO.succeed("")
 
-  def run(args: List[String]): zio.URIO[zio.ZEnv,zio.ExitCode] = ZIO.succeed(()).exitCode
 }
 
 
