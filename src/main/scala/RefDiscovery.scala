@@ -48,8 +48,9 @@ object RefDiscovery {
   // questionable \u0000 here. Need to look it up when have internet (vs haskells \0)
   def gitProtoRequest(host: String)(repo: String): String = pktLine("git-upload-pack /" ++ repo ++ "\u0000host="++host++"\u0000")
 
-  def lsRemote(remote: Remote): ZIO[ZEnv, Throwable, Future[String]] = {
-    val payload = gitProtoRequest(remote.getHost)(remote.getRepo)
+  def lsRemote(remote: Remote): ZIO[Any, Nothing, Future[String]] = {
+    val payload: String = gitProtoRequest(remote.getHost)(remote.getRepo)
+    val flush = "\u0000"
 
     // create tcp connection
     val actorSys = ActorSystem.create("MyActorSys")
@@ -58,6 +59,7 @@ object RefDiscovery {
     implicit val timeout = Timeout(new DurationInt(5).seconds)
 
     val future = (tcpActor ? AkkaTcpClient.SendMessage(ByteString(payload))).mapTo[String]
+    tcpActor ! AkkaTcpClient.SendMessage(ByteString(flush))
     ZIO.succeed(future)
   }
 

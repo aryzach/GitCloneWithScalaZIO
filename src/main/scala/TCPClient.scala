@@ -48,7 +48,7 @@ class AkkaTcpClient(remote: InetSocketAddress) extends Actor {
         case Received(data) =>
           println("Received response.")
           println("data: " + data.utf8String)
-          data.utf8String
+          connection ! data.utf8String
         case "close" =>
           println("Closing connection")
           connection ! Close
