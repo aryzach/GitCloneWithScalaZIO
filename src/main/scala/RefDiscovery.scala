@@ -24,7 +24,7 @@ return $ parsePacket $ L.fromChunks [response]
 
 package com.refDiscovery
 
-import com.tcpClientTest._
+import com.tcpClient._
 
 import akka.actor.ActorSystem
 import akka.util.ByteString

@@ -1,116 +1,63 @@
-/*
-module Git.Remote.TcpClient (
-  withConnection
-  , send
-  , receiveWithSideband
-  , receiveFully
-  , receive
-) where
-
-import qualified Data.ByteString.Char8 as C
-import qualified Data.ByteString as B
-import Network.Socket hiding                    (recv, send)
-import Network.Socket.ByteString                (recv, sendAll)
-import Data.Monoid                              (mempty, mappend)
-import Numeric                                  (readHex)
-
-withConnection :: HostName -> ServiceName -> (Socket -> IO b) -> IO b
-withConnection host port consumer = do
-sock <- openConnection host port
-r <- consumer sock
-sClose sock
-return r
-
-
-send :: Socket -> String -> IO ()
-send sock msg = sendAll sock $ C.pack msg
-
-
--- | Read packet lines.
-receive :: Socket -> IO C.ByteString
-receive sock = receive' sock mempty
-where receive' s acc = do
-maybeLine <- readPacketLine s
-maybe (return acc) (receive' s . mappend acc) maybeLine
-
-
-openConnection :: HostName -> ServiceName -> IO Socket
-openConnection host port = do
-addrinfos <- getAddrInfo Nothing (Just host) (Just port)
-let serveraddr = head addrinfos
-sock <- socket (addrFamily serveraddr) Stream defaultProtocol
-connect sock (addrAddress serveraddr)
-return sock
-
--- | Read a git packet line (variable length binary string prefixed with the overall length). 
--- Length is 4 byte, hexadecimal, padded with 0.
-readPacketLine :: Socket -> IO (Maybe C.ByteString)
-readPacketLine sock = do
-len <- readFully mempty 4
-if C.null len then return Nothing else -- check for a zero length return -> server disconnected
-case readHex $ C.unpack len of
-((l,_):_) | l > 4 -> do
-line <- readFully mempty (l-4)
-return $ Just line
-_                 -> return Nothing
-where readFully acc expected = do
-line <- recv sock expected
-let len  = C.length line
-acc' = acc `mappend` line
-cont = len /= expected && not (C.null line)
-if cont then readFully acc' (expected - len) else return acc'
-*/
-
 package com.tcpClient
 
-import akka.actor.{ Actor, ActorRef, Props }
-import akka.io.{ IO, Tcp }
-import akka.util.ByteString
 import java.net.InetSocketAddress
+import akka.actor.{Actor, Props}
+import akka.io.{IO, Tcp}
+import akka.util.ByteString
 
-object Client {
-  def props(remote: InetSocketAddress, replies: ActorRef) =
-    Props(classOf[Client], remote, replies)
+object AkkaTcpClient {
+  def props(host: String, port: Int) =
+    Props(classOf[AkkaTcpClient], new InetSocketAddress(host, port))
+
+  final case class SendMessage(message: ByteString)
+  final case class Ping(message: String)
 }
 
-class Client(remote: InetSocketAddress, listener: ActorRef) extends Actor {
-
-  import Tcp._
+class AkkaTcpClient(remote: InetSocketAddress) extends Actor {
+  import akka.io.Tcp._
   import context.system
 
-  IO(Tcp) ! Connect(remote)
+  println("Connecting to " +  remote.toString)
 
-  def receive = {
-    case CommandFailed(_: Connect) =>
-      listener ! "connect failed"
-      context.stop(self)
+  val manager = IO(Tcp)
+  manager ! Connect(remote)
+
+  override def receive: Receive = {
+    case CommandFailed(con: Connect) =>
+      println("Connection failed")
+      println(con.failureMessage.toString)
+      context stop self
 
     case c @ Connected(remote, local) =>
-      listener ! c
-      val connection = sender()
+      println(s"Connection to $remote succeeded")
+      val connection = sender
       connection ! Register(self)
-      context.become {
+
+      context become {
+        case AkkaTcpClient.SendMessage(message) =>
+          println("Sending message: " + message.utf8String)
+          connection ! Write(message)
+        case AkkaTcpClient.Ping(message) =>
+          println("hello: " + message)
         case data: ByteString =>
+          println("Sending request data: " + data.utf8String)
           connection ! Write(data)
         case CommandFailed(w: Write) =>
-          // O/S buffer was full
-          listener ! "write failed"
+          println("Failed to write request.")
+          println(w.failureMessage.toString)
         case Received(data) =>
-          listener ! data
+          println("Received response.")
+          println("data: " + data.utf8String)
+          data.utf8String
         case "close" =>
+          println("Closing connection")
           connection ! Close
         case _: ConnectionClosed =>
-          listener ! "connection closed"
-          context.stop(self)
+          println("Connection closed by server.")
+          context stop self
       }
+        case _ =>
+          println("Something else is happening")
+
   }
 }
-
-class Listener(tcpClient: ActorRef) extends Actor {
-  def send(msg: ByteString) = tcpClient ! msg
-
-  def receive = {
-    case _ => print("hi")
-  }
-}
-
