@@ -34,7 +34,7 @@ import scala.concurrent.duration._
 import scala.concurrent.Future
 
 
-//import zio._
+import zio._
 
 sealed case class Remote(getHost: String, getPort: Option[Int], getRepo: String)
 
@@ -48,17 +48,17 @@ object RefDiscovery {
   // questionable \u0000 here. Need to look it up when have internet (vs haskells \0)
   def gitProtoRequest(host: String)(repo: String): String = pktLine("git-upload-pack /" ++ repo ++ "\u0000host="++host++"\u0000")
 
-  def lsRemote(remote: Remote): Future[String] = {
+  def lsRemote(remote: Remote): ZIO[ZEnv, Throwable, Future[String]] = {
     val payload = gitProtoRequest(remote.getHost)(remote.getRepo)
 
     // create tcp connection
     val actorSys = ActorSystem.create("MyActorSys")
     val tcpActor = actorSys.actorOf(AkkaTcpClient.props(remote.getHost, 9418))
     Thread.sleep(1000)
-    implicit val timeout = Timeout(5.seconds)
+    implicit val timeout = Timeout(new DurationInt(5).seconds)
 
     val future = (tcpActor ? AkkaTcpClient.SendMessage(ByteString(payload))).mapTo[String]
-    future
+    ZIO.succeed(future)
   }
 
   val testRemote = Remote("127.0.0.1", Some(9418), "snake")
