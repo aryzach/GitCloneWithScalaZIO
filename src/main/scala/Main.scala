@@ -10,11 +10,7 @@ import ExecutionContext.Implicits.global
 object Main extends App {
 
   def run(args: List[String]): ZIO[ZEnv, Nothing, ExitCode] = 
-    RefDiscovery.lsRemote(RefDiscovery.testRemote).map(f => 
-        f onComplete { 
-          case Success(s) => println(s)
-          case Failure(t) => println(t.getMessage)
-        }).exitCode
+    RefDiscovery.lsRemote(RefDiscovery.testRemote).map(s => println(s)).exitCode
 
 }
 
