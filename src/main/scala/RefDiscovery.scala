@@ -59,7 +59,11 @@ object RefDiscovery {
       Thread.sleep(1000)
       implicit val timeout = Timeout(new DurationInt(5).seconds)
 
-      (tcpActor ? AkkaTcpClient.SendMessage(ByteString(payload))).mapTo[String]
+      val future = (tcpActor ? AkkaTcpClient.SendMessage(ByteString(payload)))
+      future.map { result =>
+        println("Total number of words " + result)
+      }
+      future.mapTo[String]
       //tcpActor ! AkkaTcpClient.SendMessage(ByteString(flush))
     }
 
