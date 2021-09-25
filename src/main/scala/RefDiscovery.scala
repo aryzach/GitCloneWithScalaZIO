@@ -24,17 +24,13 @@ return $ parsePacket $ L.fromChunks [response]
 
 package com.refDiscovery
 
-import com.tcpClient._
-
-import akka.actor.ActorSystem
-import akka.util.ByteString
-import akka.pattern.ask
-import akka.util.Timeout
-import scala.concurrent.duration._
-import scala.concurrent.Future
-
-
 import zio._
+import zio.clock._
+import zio.console._
+import zio.nio.channels._
+import zio.nio._
+import zio.nio.core._
+import scala.concurrent.duration._
 
 sealed case class Remote(getHost: String, getPort: Option[Int], getRepo: String)
 
@@ -48,28 +44,22 @@ object RefDiscovery {
   // questionable \u0000 here. Need to look it up when have internet (vs haskells \0)
   def gitProtoRequest(host: String)(repo: String): String = pktLine("git-upload-pack /" ++ repo ++ "\u0000host="++host++"\u0000")
 
-  def lsRemote(remote: Remote): Task[String] = 
-    ZIO.fromFuture { implicit ctx =>
-      val payload: String = gitProtoRequest(remote.getHost)(remote.getRepo)
-      val flush = "\u0000"
+  def lsRemote(remote: Remote): Unit = ()
 
-      // create tcp connection
-      val actorSys = ActorSystem.create("MyActorSys")
-      val tcpActor = actorSys.actorOf(AkkaTcpClient.props(remote.getHost, 9418))
-      Thread.sleep(1000)
-      implicit val timeout = Timeout(new DurationInt(5).seconds)
-
-      val future = (tcpActor ? AkkaTcpClient.SendMessage(ByteString(payload)))
-      future.map { result =>
-        println("Total number of words " + result)
+  val clientM: Managed[Exception, AsynchronousSocketChannel] = {
+    AsynchronousSocketChannel()
+      .mapM { client =>
+        for {
+          host    <- InetAddress.localHost
+          address <- InetSocketAddress.inetAddress(host, 9418)
+          _       <- client.connect(address)
+        } yield client
       }
-      future.mapTo[String]
-      //tcpActor ! AkkaTcpClient.SendMessage(ByteString(flush))
-    }
+  }
 
+  def write(b: ByteBuffer) = clientM.map(c => c.write(b)) 
 
-  val testRemote = Remote("127.0.0.1", Some(9418), "snake")
+  val testRemote = Remote("127.0.0.1", Some(9418), "pure-stocks")
 
 }
-
 
