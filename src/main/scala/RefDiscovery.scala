@@ -32,6 +32,10 @@ import zio.nio._
 import zio.nio.core._
 import scala.concurrent.duration._
 
+import java.net._
+import java.io._
+import scala.io._
+
 sealed case class Remote(getHost: String, getPort: Option[Int], getRepo: String)
 
 object RefDiscovery {
@@ -43,9 +47,26 @@ object RefDiscovery {
 
   // questionable \u0000 here. Need to look it up when have internet (vs haskells \0)
   def gitProtoRequest(host: String)(repo: String): String = pktLine("git-upload-pack /" ++ repo ++ "\u0000host="++host++"\u0000")
+  val testRemote = Remote("127.0.0.1", Some(9418), "pure-stocks")
 
-  def lsRemote(remote: Remote): Unit = ()
+  def lsRemote(remote: Remote): Unit = {
+    val payload: String = gitProtoRequest(remote.getHost)(remote.getRepo)
+    val flush = "\u0000"
 
+    val s = new Socket(java.net.InetAddress.getByName("localhost"), 9418)
+    lazy val in = new BufferedSource(s.getInputStream()).getLines()
+    val out = new PrintStream(s.getOutputStream())
+
+    out.println(payload)
+    out.flush()
+    println("Received: " + in.next())
+
+    s.close()
+
+    return ()
+  }
+
+  /*
   val clientM: Managed[Exception, AsynchronousSocketChannel] = {
     AsynchronousSocketChannel()
       .mapM { client =>
@@ -57,9 +78,13 @@ object RefDiscovery {
       }
   }
 
-  def write(b: ByteBuffer) = clientM.map(c => c.write(b)) 
 
-  val testRemote = Remote("127.0.0.1", Some(9418), "pure-stocks")
+  def write(s: String) = {
+    val bb: ByteBuffer = ByteBuffer.wrap(buffer) ByteBuffer.wrap(s.toCharArray.map { _.toByte })
+    return clientM.map(c => c.write(bb)) 
+  }
+  */
+
 
 }
 
