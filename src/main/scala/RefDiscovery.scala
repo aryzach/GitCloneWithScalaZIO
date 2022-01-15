@@ -54,7 +54,10 @@ object RefDiscovery {
     val flush = "\u0000"
 
     val s = new Socket(java.net.InetAddress.getByName("localhost"), 9418)
-    lazy val in = new BufferedSource(s.getInputStream()).getLines()
+    lazy val in = new BufferedSource(s.getInputStream())
+    in.getLines()
+
+
     val out = new PrintStream(s.getOutputStream())
 
     out.println(payload)
